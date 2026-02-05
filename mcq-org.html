@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            background-color: aqua;
+            height: 500px;
+            width: 900px;
+            padding-left: 30px;
+            font-size: 30px;
+        }
+        .question{
+            display: flex;
+            gap: 10px;
+        }
+        .question p{
+            font-size: larger;
+            margin-top: 45px;
+        }
+        #btn{
+            padding: 10px 50px;
+            font-size: large;
+            margin-left: 350px;
+            margin-top: 50px;
+            border-radius: 5px;
+            background-color:rgba(0, 255, 170, 0.779);
+            border: none;
+            box-shadow: 1px 1px 10px black;
+        }
+     input{
+        padding: 20px;
+        margin-bottom: 20px;
+     }
+    </style>
+</head>
+<body>
+
+        <div class="box">
+           <div class="question">
+            <p id="sn">Q1. </p> 
+            <h2 id="quest">How many heading in Html?</h2>
+           </div>
+           
+           <div class="opt1">
+            <input type="radio" name="option">
+           <label for="option" class="opt">1</label>
+           </div>
+
+           <div class="opt1">
+            <input type="radio" name="option">
+           <label for="option" class="opt">2</label>
+           </div>
+
+           <div class="opt1">
+            <input type="radio" name="option">
+           <label for="option" class="opt">4</label>
+           </div>
+
+           <div class="opt1">
+            <input type="radio" name="option">
+           <label for="option" class="opt">6</label>
+           </div>
+           
+            <button id="btn" onclick="q()" >Next</button>
+        </div>
+
+        <script>
+            var array=[
+                {'ques':"markup language stand for?",
+                    'a':"Css",
+                    'b':"Html",
+                    'c':"JavaScript",
+                    'd':"php",
+                    'correct':"a"
+                },
+
+                {'ques':"object based language?",
+                    'a':"C",
+                    'b':"C++",
+                    'c':"JavaScript",
+                    'd':"php",
+                    'correct':"c"
+                },
+
+                {'ques':"cascading styleSheet stand for?",
+                    'a':"Css",
+                    'b':"Html",
+                    'c':"JavaScript",
+                    'd':"php",
+                    'correct':"a"
+                },
+            ];
+            var quest=document.querySelector('#quest');
+            var opt=document.querySelectorAll('.opt');
+            var sn=document.querySelector('#sn');
+
+            var i=0;
+            var sN=2;
+        function q(){
+                var obj=array[i];
+                var input=document.querySelectorAll('input');
+                quest.innerHTML=obj.ques;
+                sn.innerHTML=`Q${sN}.`;
+                sN++;
+               opt[0].innerText=obj.a;
+               opt[1].innerText=obj.b;
+               opt[2].innerText=obj.c;
+               opt[3].innerText=obj.d;
+               i++;
+               if(obj.correct==input.checked)
+            {
+                console.log("right");
+            }
+            else{
+                console.log("wrong")
+            }
+              console.log(quest,i,opt,obj.correct);
+              console.log(input.checked.value);
+              }
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    background-color: aqua;
+    height: 500px;
+    width: 900px;
+    padding-left: 30px;
+    font-size: 30px;
+}
+.question{
+    display: flex;
+    gap: 10px;
+}
+.question p{
+    font-size: larger;
+    margin-top: 45px;
+}
+#btn, #pre{
+    padding: 10px 50px;
+    font-size: large;
+    margin-top: 50px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 10px black;
+}
+input{
+padding: 20px;
+margin-bottom: 20px;
+}
