@@ -11,6 +11,13 @@ Users can play quizzes, track scores, and admins can manage questions and users.
 - Score tracking for users
 - Simple and user-friendly interface
 
+## Database Setup
+1. Create a database named `quiz_game`
+2. Import `Database/mcq.sql` using phpMyAdmin or MySQL
+3. Update database credentials in `config.php`
+4. Run the project on localhost
+
+
 ## Installation
 1. Clone the repository:
    ```bash
