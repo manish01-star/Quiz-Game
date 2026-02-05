@@ -280,14 +280,7 @@ CREATE TABLE `signup` (
 INSERT INTO `signup` (`id`, `username`, `email`, `password`, `score`, `profile_image`, `date`) VALUES
 (16, 'manish', 'manish@gmail.com', '12345678', 20, 'uploads/OIP (1).jpg', '2024-11-20 16:13:19'),
 (17, 'dhankumar', 'dhankumar@gmail.com', '12345', 0, NULL, '2024-11-20 16:14:04'),
-(19, 'hello', 'hello@gmail.com', '12345678', 0, NULL, '2024-11-21 09:45:16'),
-(21, 'sumit', 'sumit@gmail.com', '1234', 0, NULL, '2024-11-21 09:47:06'),
-(22, 'virat', 'virat@gmail.com', '123456', 0, NULL, '2024-11-21 09:53:35'),
-(25, 'danish', 'danish@gmail.com', '7890', 0, NULL, '2024-11-21 09:55:34'),
-(54, 'alfa', 'alfa@gmail.com', '4445678', 0, NULL, '2024-11-21 11:38:20'),
-(57, 'manish', 'manish@gmail.com', '23456', 20, NULL, '2024-11-22 09:22:00'),
-(58, 'manish thakur', 'hv@gmail.com', '45678', 0, NULL, '2024-11-22 09:46:37'),
-(59, 'danish', 'manish@gmail.com', '123', 20, NULL, '2024-11-22 09:51:20');
+(19, 'hello', 'hello@gmail.com', '12345678', 0, NULL, '2024-11-21 09:45:16');
 
 --
 -- Indexes for dumped tables
